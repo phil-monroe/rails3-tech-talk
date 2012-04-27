@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Rails 3.1/3.2 Overview</title>
+
+  <meta name="viewport" content="width=device-width"/>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+  <script type="text/javascript" src="./js/coffee-script.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+    <link rel="stylesheet" href="file/style.css" type="text/css"/>
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+      setupPreso(false, './');
+  });
+  </script>
+
+</head>
+
+<body>
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">z, ?</td><td>toggle help (this)</td></tr>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">shift-space, &larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>toggle debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c, t</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">n</td><td>toggle notes</td></tr>
+    <tr><td class="key">p</td><td>run preshow</td></tr>
+  </table>
+</div>
+
+<div class="buttonNav">
+  <input type="submit" onClick="prevStep();" value="prev"/>
+  <input type="submit" onClick="nextStep();" value="next"/>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+  <span id="notesInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content" ref="intro/01_slide/1">
+<p><img src="./file/intro/rails.png" width="533" height="680" alt="Rails"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="intro/01_slide/2">
+<h1>Rails 3</h1>
+
+<h3>is effin awesome.</h3>
+
+<h2>Phil Monroe</h2></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="review/01_overview">
+<h1>Rails Review</h1>
+
+<ul>
+<li>Model - View - Controller</li>
+<li>App Structure</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="review/02_models/1">
+<h1>Model</h1>
+
+<ul>
+<li>Noun</li>
+<li>Person/Place/Thing</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="review/02_models/2">
+<h1>Model Ex. - User</h1>
+
+<p><img src="./file/review/user.png" width="157" height="398" alt="Rails"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="review/02_models/3">
+<h1>Model Ex. - User</h1>
+
+<p><img src="./file/review/user_smile.png" width="157" height="398" alt="Rails"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="review/02_models/4">
+<h1>Models in DB</h1>
+
+<p><img src="./file/review/users_db.png" width="542" height="187" alt="Rails"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="review/03_views/1">
+<h1>View</h1>
+
+<ul>
+<li>What you want to show.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="review/03_views/2">
+<h1>View Ex. - User</h1>
+
+<p><img src="./file/review/user_page.png" width="768" height="594" alt="page"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="review/03_views/3">
+<h1>View Ex. - User</h1>
+
+<p><img src="./file/review/user_page_arrow.png" width="768" height="594" alt="page"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="review/04_controllers/1">
+<h1>Controller</h1>
+
+<ul>
+<li>Get something to show.</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="review/04_controllers/2">
+<h1>Controller Ex. - User</h1>
+
+<p><img src="./file/review/user_select.png" width="813" height="417" alt="page"/></p></div>
+</div></div>
+
+</body>
+</html>
