@@ -1,7 +1,7 @@
 !SLIDE bullets
 # View
 
-* What you want to show.
+* How you want to display your models.
 
 !SLIDE bullets
 # View Ex. - User
