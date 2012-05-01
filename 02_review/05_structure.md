@@ -1,5 +1,6 @@
 !SLIDE bullets
 # App Structure
 
-* Convention of Configuration!
-<!-- TODO: Happy Gilmore -->
+* Convention over Configuration!
+
+![happy gilmore](happygilmore.jpg)
